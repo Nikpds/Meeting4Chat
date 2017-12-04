@@ -1,0 +1,23 @@
+<div class="columns is-multiline">
+  <div class="column is-4 is-offset-4" style="margin-top:200px">
+    <p class="title is-3 has-text-centered has-text-white">Login</p>
+    <div class="field">
+      <p class="control has-icons-left">
+        <input class="input roundcorners" [(ngModel)]="user.username" type="text" placeholder="Username">
+        <span class="icon is-small is-left">
+           <i class="fa fa-user"></i>
+        </span>
+      </p>
+    </div>
+    <div class="field">
+      <p class="control has-icons-left">
+        <input class="input roundcorners" [(ngModel)]="user.password" type="password" (keyup.enter)="login()" placeholder="Password">
+        <span class="icon is-small is-left">
+           <i class="fa fa-lock"></i>
+        </span>
+      </p>
+    </div>
+    <div class="button is-danger field is-block roundcorners" (click)="login()">Insert </div>
+    <a class="has-text-white">Forgot your password?</a>
+  </div>
+</div>
